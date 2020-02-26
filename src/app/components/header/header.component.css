@@ -1,0 +1,40 @@
+#social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  padding: 5px;
+}
+
+img:not([alt="earth"]) {
+  width: 3em;
+  height: 3em;
+}
+
+[alt="earth"] {
+  width: 5em;
+  height: 5em;
+}
+
+#web_logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  padding: 5px;
+}
+
+#website_title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(66, 103, 178);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid black;
+}
