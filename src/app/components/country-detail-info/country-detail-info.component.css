@@ -41,3 +41,19 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
+#backButton {
+  background-color: gold;
+  width: 25%;
+  box-shadow: 2px 2px gray;
+  color: blue;
+}
+
+#backButton:hover {
+  cursor: pointer;
+}
+
+#backButton:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Location } from "@angular/common";
 import { CountriesGetterService } from "src/app/services/countries-getter.service";
 import { Country } from "src/app/models/country";
 import { City } from "src/app/models/city";
@@ -10,7 +11,10 @@ import { City } from "src/app/models/city";
 })
 export class CountryDetailInfoComponent implements OnInit {
   countryContinent: string;
-  constructor(private countriesService: CountriesGetterService) {}
+  constructor(
+    private countriesService: CountriesGetterService,
+    private location: Location
+  ) {}
 
   countryName = "";
   countryCapital = "";
@@ -29,5 +33,9 @@ export class CountryDetailInfoComponent implements OnInit {
     this.countryLanguage = this.country.language;
     this.countryContinent = this.country.continent;
     this.cities = this.country.cities;
+  }
+
+  goBack() {
+    this.location.back();
   }
 }

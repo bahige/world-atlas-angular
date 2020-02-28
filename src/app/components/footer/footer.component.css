@@ -39,3 +39,8 @@ ul {
 ul li {
   padding: 0.5rem;
 }
+
+ul li:hover {
+  cursor: pointer;
+  color: red;
+}
