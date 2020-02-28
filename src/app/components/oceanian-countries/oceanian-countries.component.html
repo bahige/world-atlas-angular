@@ -1,10 +1,9 @@
 <div id="container">
-  <div id="countries-grid" *ngFor="let country of countries">
-    <div *ngIf="country.continent == 'Oceania'">
-      <app-basic-country
-        [countryName]="country.country"
-        [countryFlag]="country.flag"
-      ></app-basic-country>
-    </div>
+  <div id="countries-grid" *ngFor="let country of countriesArray">
+    <app-basic-country
+      (click)="onSelect(country)"
+      [countryName]="country.country"
+      [countryFlag]="country.flag"
+    ></app-basic-country>
   </div>
 </div>

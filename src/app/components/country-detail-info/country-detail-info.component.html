@@ -1,0 +1,26 @@
+<div id="country-details">
+  <div id="country-details-info">
+    <div class="country-column">
+      <img [src]="countryFlag" [alt]="countryName" />
+      <div class="label">
+        {{ countryName }}
+      </div>
+    </div>
+
+    <div class="country-column">
+      <div class="label">Capital City: {{ countryCapital }}</div>
+      <div class="label">Currency: {{ countryCurrency }}</div>
+      <div class="label">Official Language: {{ countryLanguage }}</div>
+      <div class="label">Continent: {{ countryContinent }}</div>
+    </div>
+  </div>
+
+  <div class="cities-row">
+    <div *ngFor="let city of cities">
+      <app-city-details
+        [cityName]="city.city"
+        [cityImage]="city.photo"
+      ></app-city-details>
+    </div>
+  </div>
+</div>

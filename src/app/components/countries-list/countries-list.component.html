@@ -1,6 +1,7 @@
 <div id="container">
   <div id="countries-grid" *ngFor="let country of countries">
     <app-basic-country
+      (click)="onSelect(country)"
       [countryName]="country.country"
       [countryFlag]="country.flag"
     ></app-basic-country>

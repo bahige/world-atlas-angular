@@ -1,0 +1,22 @@
+img {
+  max-width: 90%;
+  max-height: 75%;
+  padding: 0.5rem;
+}
+
+#cityName {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: ivory;
+  padding: 0.5rem;
+}
+
+#basic-city {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
