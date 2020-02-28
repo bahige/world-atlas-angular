@@ -8,6 +8,9 @@ import { Country } from "../models/country";
   providedIn: "root"
 })
 export class CountriesGetterService {
+  country: Country;
+  countries: Country[];
+
   constructor(private httpClient: HttpClient) {}
 
   url = "https://api.myjson.com/bins/10k58h";

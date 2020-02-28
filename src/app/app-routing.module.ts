@@ -6,14 +6,22 @@ import { AsianCountriesComponent } from "./components/asian-countries/asian-coun
 import { EuropeanCountriesComponent } from "./components/european-countries/european-countries.component";
 import { OceanianCountriesComponent } from "./components/oceanian-countries/oceanian-countries.component";
 import { CountriesListComponent } from "./components/countries-list/countries-list.component";
+import { CountryDetailInfoComponent } from "./components/country-detail-info/country-detail-info.component";
 
 const routes: Routes = [
+  { path: "", redirectTo: "/world", pathMatch: "full" },
   { path: "africa", component: AfricanCountriesComponent },
+  { path: "africa/:name", component: CountryDetailInfoComponent },
   { path: "america", component: AmericanCountriesComponent },
+  { path: "america/:name", component: CountryDetailInfoComponent },
   { path: "asia", component: AsianCountriesComponent },
+  { path: "asia/:name", component: CountryDetailInfoComponent },
   { path: "europe", component: EuropeanCountriesComponent },
+  { path: "europe/:name", component: CountryDetailInfoComponent },
   { path: "oceania", component: OceanianCountriesComponent },
-  { path: "world", component: CountriesListComponent }
+  { path: "oceania/:name", component: CountryDetailInfoComponent },
+  { path: "world", component: CountriesListComponent },
+  { path: "world/:name", component: CountryDetailInfoComponent }
 ];
 
 @NgModule({
