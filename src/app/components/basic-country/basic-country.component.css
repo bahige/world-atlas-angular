@@ -1,0 +1,26 @@
+img {
+  /* width: 24%; */
+  /* height: 16%; */
+  /* width: 100%; */
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0.5rem;
+}
+
+#countryName {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  background-color: ivory;
+  padding: 0.5rem;
+}
+
+#basic-country {
+  padding: 2rem;
+  border: black solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}

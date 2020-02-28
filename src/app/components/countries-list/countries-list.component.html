@@ -1,0 +1,8 @@
+<div id="container">
+  <div id="countries-grid" *ngFor="let country of countries">
+    <app-basic-country
+      [countryName]="country.country"
+      [countryFlag]="country.flag"
+    ></app-basic-country>
+  </div>
+</div>

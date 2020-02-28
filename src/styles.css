@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: #86f5f6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(66, 103, 178);
+  box-sizing: border-box;
 }

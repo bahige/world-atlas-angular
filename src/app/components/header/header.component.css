@@ -12,6 +12,10 @@ img:not([alt="earth"]) {
   height: 3em;
 }
 
+img:not([alt="earth"]):hover {
+  cursor: pointer;
+}
+
 [alt="earth"] {
   width: 5em;
   height: 5em;
