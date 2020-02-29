@@ -1,13 +1,13 @@
 <div id="country-details">
   <div id="country-details-info">
-    <div class="country-column">
+    <div class="country-column" id="country-flag">
       <img [src]="countryFlag" [alt]="countryName" />
       <div class="label">
         {{ countryName }}
       </div>
     </div>
 
-    <div class="country-column">
+    <div class="country-column" id="more-info">
       <div class="label">Capital City: {{ countryCapital }}</div>
       <div class="label">Currency: {{ countryCurrency }}</div>
       <div class="label">Official Language: {{ countryLanguage }}</div>

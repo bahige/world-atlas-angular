@@ -2,17 +2,17 @@ img {
   /* width: 24%; */
   /* height: 16%; */
   /* width: 100%; */
-  max-width: 90%;
-  max-height: 75%;
+  width: 90%;
+  height: 60%;
   padding: 0.5rem;
 }
 
 #countryName {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 2vw;
   text-align: center;
   background-color: ivory;
-  padding: 0.5rem;
+  padding: 1vw;
 }
 
 #basic-country {
@@ -27,4 +27,49 @@ img {
 #basic-country:hover {
   cursor: pointer;
   background-color: cornflowerblue;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #countryName {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    background-color: ivory;
+    padding: 0.5vw;
+  }
+
+  img {
+    width: 80%;
+    height: 60%;
+    padding: 0.5rem;
+  }
+
+  #basic-country {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #countryName {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    background-color: ivory;
+    padding: 0.5vw;
+  }
+
+  img {
+    width: 80%;
+    height: 70%;
+    padding: 0.5rem;
+  }
+
+  #basic-country {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
 }

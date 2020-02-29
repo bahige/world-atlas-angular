@@ -6,3 +6,26 @@
 #countries-grid {
   justify-self: center;
 }
+
+/* For Phones */
+
+@media only screen and (max-width: 600px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

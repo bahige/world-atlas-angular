@@ -20,3 +20,17 @@ img {
   align-items: center;
   height: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+  #cityName {
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    background-color: ivory;
+    padding: 5px;
+  }
+
+  #cityName {
+    width: 50%;
+  }
+}
