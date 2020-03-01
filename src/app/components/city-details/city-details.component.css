@@ -6,7 +6,7 @@ img {
 
 #cityName {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 20px;
   text-align: center;
   background-color: ivory;
   padding: 0.5rem;
@@ -23,14 +23,14 @@ img {
 
 @media only screen and (max-width: 600px) {
   #cityName {
-    width: 100%;
-    font-size: 4vw;
+    width: 75%;
+    font-size: 20px;
     text-align: center;
     background-color: ivory;
     padding: 5px;
   }
 
-  #cityName {
-    width: 50%;
+  #basic-city {
+    padding: 0.5rem;
   }
 }

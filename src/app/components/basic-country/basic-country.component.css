@@ -52,10 +52,11 @@ img {
 @media only screen and (max-width: 600px) {
   #countryName {
     width: 100%;
-    font-size: 4vw;
+    font-size: 24px;
     text-align: center;
     background-color: ivory;
-    padding: 0.5vw;
+    padding: 10px 0 10px;
+    margin: 0px 5px 0;
   }
 
   img {

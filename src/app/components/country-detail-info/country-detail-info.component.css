@@ -1,9 +1,9 @@
 #country-details {
   width: 97vw;
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -12,6 +12,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+#country-details-info-1 {
+  display: none;
 }
 
 img {
@@ -40,6 +44,7 @@ img {
 .cities-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border: solid black 1px;
 }
 
 #backButton {
@@ -58,57 +63,112 @@ img {
   transform: translate(2px, 2px);
 }
 
-/* For Phones */
-
-@media only screen and (max-width: 768px) {
-  #country-details-info {
-    width: 97vw;
+/* For Ipad Pro */
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  #country-details {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
   }
 
   .country-column {
-    width: 100%;
-    height: 50vh;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    flex: start;
+    justify-content: space-around;
+    height: 400px;
+  }
+
+  .label:not(#backButton) {
+    width: 80%;
+    padding: 15px 0 15px;
+    font-size: 24px;
+  }
+
+  #backButton {
+    font-size: 20px;
+  }
+  #more-info {
+    justify-content: space-between;
+  }
+
+  .country-column:not(#more-info) {
     justify-content: space-evenly;
+  }
+}
+
+/* For Tablet */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #country-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .country-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .label:not(#backButton) {
+    width: 80%;
+    padding: 15px 0 15px;
+    font-size: 24px;
+  }
+
+  #backButton {
+    font-size: 20px;
+  }
+  #more-info {
+    justify-content: space-between;
+  }
+
+  .country-column:not(#more-info) {
+    justify-content: space-evenly;
+  }
+}
+
+/* For Phone */
+@media only screen and (max-width: 600px) {
+  #country-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #country-details-info {
+    display: none;
+  }
+
+  #country-details-info-1 {
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    margin: 2vw;
-    padding: 2vw;
+  }
+
+  .label:not(#backButton) {
+    width: 80%;
+    padding: 15px 0 15px;
+    font-size: 20px;
+  }
+
+  #backButton {
+    font-size: 20px;
+  }
+  #more-info {
+    justify-content: space-between;
+  }
+
+  .country-column:not(#more-info) {
+    justify-content: space-evenly;
   }
 
   .cities-row {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  #country-details {
-    width: 97vw;
-    height: 90vh;
-    display: block;
-  }
-
-  .label {
-    width: fit-content;
-    font-size: 4vw;
-  }
-
-  img {
-    max-width: 400px;
-    max-height: 275px;
-    padding: 0.5rem;
-  }
-
-  #country-flag {
-    margin-bottom: 0;
-  }
-
-  #more-info {
-    margin-top: 0;
   }
 }

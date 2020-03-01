@@ -16,6 +16,18 @@
     </div>
   </div>
 
+  <div id="country-details-info-1">
+    <img [src]="countryFlag" [alt]="countryName" />
+    <div class="label">
+      {{ countryName }}
+    </div>
+    <div class="label">Capital City: {{ countryCapital }}</div>
+    <div class="label">Currency: {{ countryCurrency }}</div>
+    <div class="label">Official Language: {{ countryLanguage }}</div>
+    <div class="label">Continent: {{ countryContinent }}</div>
+    <div class="label" id="backButton" (click)="goBack()">Back</div>
+  </div>
+
   <div class="cities-row">
     <div *ngFor="let city of cities">
       <app-city-details

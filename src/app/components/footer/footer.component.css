@@ -7,22 +7,22 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 20%;
-  padding: 5px;
+  width: 400px;
 }
 
 #website_title {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.2vw;
+  font-size: 32px;
   font-weight: bold;
   color: rgb(66, 103, 178);
+  white-space: nowrap;
 }
 
 #footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid black;
+  border: solid black 1px;
 }
 
 ul {
@@ -48,17 +48,85 @@ ul li:hover {
 
 @media only screen and (max-width: 768px) {
   #website_title {
-    font-size: 3vw;
+    font-size: 16px;
+    white-space: nowrap;
     width: fit-content;
   }
 
   [alt="earth"] {
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    height: 35%;
   }
 
   ul li {
-    padding: 0.5rem;
-    font-size: 2.5vw;
+    padding: 5px 0 5px;
+    font-size: 10px;
+  }
+
+  #web-logo {
+    padding-left: 0px;
+    width: 50%;
+  }
+
+  #footer {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #website_title {
+    font-size: 24px;
+    padding-left: 5px;
+    white-space: nowrap;
+    width: fit-content;
+  }
+
+  [alt="earth"] {
+    width: 35%;
+    height: 35%;
+  }
+
+  ul li {
+    padding: 5px 0 5px;
+    font-size: 14px;
+  }
+
+  #web-logo {
+    padding-left: 20px;
+    width: 200px;
+  }
+
+  #footer {
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  ul li {
+    padding: 5px 0 5px;
+    font-size: 20px;
+  }
+
+  #web-logo {
+    padding-left: 1px;
+    width: 200px;
+  }
+
+  #footer {
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+
+  [alt="earth"] {
+    width: 35%;
+    height: 35%;
+  }
+
+  #website_title {
+    font-size: 32px;
+    padding-left: 3px;
+    white-space: nowrap;
+    width: fit-content;
   }
 }
