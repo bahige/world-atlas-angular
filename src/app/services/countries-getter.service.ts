@@ -5,7 +5,7 @@ import { catchError, map } from "rxjs/operators";
 import { Country } from "../models/country";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class CountriesGetterService {
   country: Country;
@@ -13,12 +13,12 @@ export class CountriesGetterService {
 
   constructor(private httpClient: HttpClient) {}
 
-  url = "https://api.myjson.com/bins/10k58h";
+  url = "https://api.npoint.io/027afbe0190c9042828c";
 
   getCountries(): Observable<Country[]> {
     return this.httpClient
       .get<Country[]>(this.url)
-      .pipe(map(data => data["countries"]))
+      .pipe(map((data) => data["countries"]))
       .pipe(catchError(this.errorHandler));
   }
 

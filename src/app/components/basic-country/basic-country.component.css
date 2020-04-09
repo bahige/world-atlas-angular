@@ -3,16 +3,16 @@ img {
   /* height: 16%; */
   /* width: 100%; */
   width: 90%;
-  height: 60%;
+  height: 75%;
   padding: 0.5rem;
 }
 
 #countryName {
   width: 100%;
-  font-size: 2vw;
+  font-size: 1.8vw;
   text-align: center;
   background-color: ivory;
-  padding: 1vw;
+  padding: 0.8vw;
 }
 
 #basic-country {
